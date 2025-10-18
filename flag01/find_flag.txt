@@ -1,0 +1,10 @@
+
+How to find the flag ?
+
+1 - Go to the recover password page, by clicking on 'I forgot my password', after having clicked on 'Sign In' button in the homepage
+2 - Open the web developer tools with CTRL + SHIFT + I
+3 - Pick the 'Submit' button to inspect 
+	You can see that the code is written like this: <input type="hidden" name="mail" value="webmaster@borntosec.com" maxlength="15">
+4 - Remove 'hidden' to let type="", then make sure there is no more than 15 caracters in the input box
+5 - Click on Submit button
+6 - It should redirects you on a new page with an explicit flag given
