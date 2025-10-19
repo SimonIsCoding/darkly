@@ -1,0 +1,4 @@
+How to find the flag ?
+
+1 - In the homepage, right click somewhere and click on 'view source code'
+2 - At the end of the page, you have a strange hashed link like: href="?page=b7e44c7a40c5f80139f0a50f3650fb2bd8d00b0d24667c4c2ca32c88e13b758f"
