@@ -1,0 +1,6 @@
+How to find the flag ? 
+
+1 - If you check the URL and try to get back in the project previous folder, by writing: http://darklyIPadress/../ you will see that there is an indication with a certain message
+2 - Then do it again until getting a clearer indication like 'you can do it' -> you have to input until http://darklyIPadress/?page=member../../../../../../../
+3 - Then we can suppose that we are in a Linux environment and try to look for the password file. It is located in /etc folder. Meaning try: https://darklyIPadress/?page=member../../../../../../../etc/passwd
+4 - Then a popup alert should give the explicit flag for you
