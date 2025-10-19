@@ -4,15 +4,15 @@ How to find the flag ?
 	-> By searching: 1, then 2, then ... until 5 -> you get an indication that the flag can be hidden in the number 5 image
 2 - In the input box, write '5 union select user(), database()', then press submit button. By doing this you want to get the info of the database, to know how it is structured
 	-> it can be potentially SQL injected. Let's dive deeper to know it
-Then you can also see that the title is 'Member_images'. This will help us for the future.
+Then you can also see that the title is 'Member_images' for image number 5. This will help us for the future.
 3 - In the input box, write '5 union select table_name, table_schema FROM information_schema.tables'
 	-> WHY this input ? This is written in the PHP manual
 	-> It will give all the information about how are structured the tables in the database -> look for 'Member_images' section
 	-> It gives you another information which is the URL called 'list_images'
-4 - Now we want to know how the list_images table is structured:
+4 - Now we want to know how is specific list_images table is structured:
 	-> In the input box, write '5 union select COLUMN_NAME, table_name FROM information_schema.columns'
-	-> It will give you how it's structured every COLUMN_NAME
-	-> Find the list_images one
-	It is divided in 4 parts: id, url, title, comment
-5 - Then try to look for the information for each component of list_images. In the input box, write '5 union select title, comment FROM list_images' -> then read all the info and you should get the flag
+	-> It will give you how every COLUMN_NAME are structured 
+	-> Find the list_images one, because this is the one that interests us
+	You can see that it is divided in 4 parts: id, url, title, comment
+5 - Then try to look for the information for each component of list_images. For example, in the input box, write '5 union select title, comment FROM list_images' -> then read all the info and you should get the flag
 	-> the flag is 'albatroz'
