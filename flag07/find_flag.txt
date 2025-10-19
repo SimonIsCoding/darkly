@@ -1,0 +1,18 @@
+How to find the flag ? 
+
+For finding this flag we will use an extra tool
+1 - Download & Install Burp Suite Community Edition
+2 - Launch it
+3 - Select 'Temporary project in memory', then click on 'Next' Button
+4 - Select 'Use Burp Defaults', then click on 'Start Burp' Button
+5 - Select 'Proxy' panel and click on 'Intercept off' to activate the interception. After clicking, it should be On. Then click on 'Open Browser' Button. A default web browser should appear.
+6 - On this web browser. In the URL, paste the link of the Darkly IP website to the page that let you upload a file (in my case: http://192.168.56.102/?page=upload). Press Enter. This should load undefenetly
+7 - Go back on Burp Suite and click on the 'Forward' button, inside the 'Proxy' panel. Now Burp Suite should give you a message like 'Interecept is On'
+8 - Go back to the default web browser launched by Burp Suite. You should see the darkly web.
+9 - Create a php script. Make sure you save it as a php file. This won't work if it's a text file.
+You can see the index.php file created for this purpose
+10 - Upload it into the darkly website in the Burp Suite default web browser. Click on 'Upload' button 
+11 - Go back to Burp Suite. In the 'Proxy' panel, you have a 'Request' window. Inside of this window, you will change: 'Content-Type: application/octet-stream' into 'Content-Type: image/jpg'
+12 - Press 'forward' button.
+13 - Go back to the Burp Suite default web browser. Do not touch anything, just let it load the new page.
+	-> After loading, you should see the new flag.
