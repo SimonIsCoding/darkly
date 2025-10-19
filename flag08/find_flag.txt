@@ -1,0 +1,13 @@
+How to find the flag ? 
+
+For finding this flag we will use an extra tool
+1 - Download & Install Burp Suite Community Edition
+2 - Launch it
+3 - Select 'Temporary project in memory', then click on 'Next' Button
+4 - Select 'Use Burp Defaults', then click on 'Start Burp' Button
+5 - Select 'Proxy' panel and click on 'Intercept off' to activate the interception. After clicking, it should be On. Then click on 'Open Browser' Button. A default web browser should appear.
+6 - On this web browser. In the URL, paste the link of the Darkly IP website to the page that let you signIn (in my case: http://192.168.56.102/?page=signin). Press Enter. This should load undefenetly
+7 - Go back on Burp Suite and click on the 'Forward' button, inside the 'Proxy' panel. Now Burp Suite should give you a message like 'Interecept is On'
+8 - Go back to the default web browser launched by Burp Suite. You should see the darkly web.
+9 - In the login input, write 'admin'. Then go back to Burp Suite.
+10 - 
