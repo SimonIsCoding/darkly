@@ -21,3 +21,4 @@ For finding this flag we will use 2 extra tools: Burp Suite and the rockyou.txt 
    - Indication 2: Check the response number. You can also see the render, to see it 'in live'
    - You can configure the Resource pool to go faster between 2 attacks.
 18 - After having waited enough, you can see that there are no more attacks after the 73th password. It stops because with the 73th attack, the browser found 'win.png' image in the webpage. And you can see that the Response number is very differents from the others. Same for 'Length' parameter.
+Result: the login is 'admin' and the password is 'shadow'
