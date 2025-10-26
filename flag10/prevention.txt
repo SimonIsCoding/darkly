@@ -6,6 +6,12 @@ Attackers often use this trick to:
 	- Steal user sessions or credentials.
 	- Launch phishing attacks with legitimate-looking URLs.
 	- The user may be redirected to an untrusted page that contains malware which may then compromise the user's system. In some cases, an open redirect can also enable the immediate download of a file without the user's permission.
+	
+Example on why it is bad:
+
+<a href="http://bank.example.com/redirect?url=http://attacker.example.net">Click here to log in</a>
+
+The user may assume that the link is safe since the URL starts with their trusted bank, bank.example.com. However, the user will then be redirected to the attacker's web site (attacker.example.net) which the attacker may have made to appear very similar to bank.example.com. The user may then unwittingly enter credentials into the attacker's web page and compromise their bank account. A Java servlet should never redirect a user to a URL without verifying that the redirect address is a trusted site.
 
 How to prevent it ?
 	- Simply avoid to use redirects and forwards
@@ -17,12 +23,6 @@ How to prevent it ?
 	- Sanitize input by creating a list of trusted URLs (lists of hosts or a regex).
 		-This should be based on an allow-list approach, rather than a denylist.
 	- Force all redirects to first go through a page notifying users that they are going off of your site, with the destination clearly displayed, and have them click a link to confirm.
-
-Example on why it is bad:
-
-<a href="http://bank.example.com/redirect?url=http://attacker.example.net">Click here to log in</a>
-
-The user may assume that the link is safe since the URL starts with their trusted bank, bank.example.com. However, the user will then be redirected to the attacker's web site (attacker.example.net) which the attacker may have made to appear very similar to bank.example.com. The user may then unwittingly enter credentials into the attacker's web page and compromise their bank account. A Java servlet should never redirect a user to a URL without verifying that the redirect address is a trusted site.
 
 Ref:
 - https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/11-Client_Side_Testing/04-Testing_for_Client_Side_URL_Redirect
