@@ -9,4 +9,6 @@
 ## Flag 07 - Submit Image with php code integrated
 ## Flag 08 - Login page BruteForce
 ## Flag 09 - Leave a feedback -> script XSS
-## Flag 10 - Check Homepage source Code
+## Flag 10 - Open Redirect - Check Homepage source Code
+### - https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/Client_Side_Testing/04-Testing_for_Client_Side_URL_Redirect
+### - https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html
