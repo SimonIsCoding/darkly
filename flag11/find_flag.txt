@@ -1,0 +1,6 @@
+How to find the flag ?
+
+1 - Go to http://DarklyIPaddress/robots.txt
+2 - We udnerstand that there is a hidden folder. Go inside by entering: http://DarklyIPaddress/.hidden/ in the URL 
+3 - Create a python script that will look recursively through each directories to extract the content for each README files. If the README contains the word 'Flag' you won.
+hint: there are a maximum of 3 depth layers for each directories but there 28 directories inside of each subdirectories
