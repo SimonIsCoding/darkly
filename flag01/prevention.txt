@@ -1,0 +1,12 @@
+How to prevent it ? 
+
+- Never trust what the client is sending
+- Never store sensitive data on the client-side
+
+Why it is dangerous ? 
+
+Each time a client is sending information to the server, the server has to check it. Never trust what's the client is sending. Because if it is modifying a field, like we did, then he could send SQL or XSS injection, for example. The data client-side are controllable by the client itself. 
+
+Refs:
+- https://owasp.org/www-community/attacks/Web_Parameter_Tampering
+- https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/10-Business_Logic_Testing/03-Test_Integrity_Checks
