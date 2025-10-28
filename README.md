@@ -35,11 +35,9 @@ Follow these steps to place the VM and host on the same LAN/subnet.
 - If the VM uses DHCP, it should obtain an IP from the same network as the host.
 - If necessary, configure a static IP in the VM (gateway and netmask must match the host network).
 
-#### You should see this:
-
-<div align=center>
-<img src=""/>
-</div>
+> [!TIP]
+> Use the exact same network for the local machine and the VM. Don't use a VPN. 
+> Access the site in **HTTP**.
 
 ## Flag 01 - Parameter Tampering - I forgot my password
 Refs:<br>
