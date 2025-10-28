@@ -8,12 +8,22 @@ Refs:<br>
 
 ## Flag 02 - Exposure of sensitive files - /robots.txt & /admin panel
 Refs:<br>
+[Session_Management_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#cookies)
+
+[Cookie_Theft_Mitigation_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cookie_Theft_Mitigation_Cheat_Sheet.html)
+
+## Flag 03 - Cookie tampering - I_am_admin
+Refs:<br>
+[]()
+
+[]()
+
+## Flag 04 - SQL Injection - Image number
+Refs:<br>
 [Review_Webserver_Metafiles_for_Information_Leakage](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/03-Review_Webserver_Metafiles_for_Information_Leakage)
 
 [Insecure_Direct_Object_References](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/05-Authorization_Testing/04-Testing_for_Insecure_Direct_Object_References)
 
-## Flag 03 - Cookies - I_am_admin
-## Flag 04 - SQL Injection - Image number
 ## Flag 05 - SQL Injection - Search Member by ID
 ## Flag 06 - URL Route http://darklyIPaddress/../../
 ## Flag 07 - Submit Image with php code integrated
