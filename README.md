@@ -26,10 +26,20 @@ Follow these steps to place the VM and host on the same LAN/subnet.
 
 5. **Access the darkly_IP_Adress in your web browser**
 
+<p align="center">
+  <img src="prerequisites/darkly_img.png" width="800">
+</p>
+
 #### Network Configuration
 
 - If the VM uses DHCP, it should obtain an IP from the same network as the host.
 - If necessary, configure a static IP in the VM (gateway and netmask must match the host network).
+
+#### You should see this:
+
+<div align=center>
+<img src=""/>
+</div>
 
 ## Flag 01 - Parameter Tampering - I forgot my password
 Refs:<br>
