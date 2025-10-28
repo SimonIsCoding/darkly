@@ -1,5 +1,34 @@
 # darkly
 
+## Darkly VM Setup Guide
+
+### Goal
+
+Download the Darkly ISO, create a VirtualBox VM, attach the ISO, and configure a bridged network so the VM and your host appear on the same LAN (same subnet) and can reach each other directly.
+
+### Configuring a Bridged Network (VirtualBox) — Quick Instructions
+
+Follow these steps to place the VM and host on the same LAN/subnet.
+
+#### Configuration Steps
+
+1. **Open VirtualBox → Settings** (for your VM) → **Network**
+
+2. **Adapter 1** → Enable Network Adapter
+   - **Attached to:** Bridged Adapter
+   - **Name:** Select your host's physical interface (e.g., eth0, enp3s0, Wi-Fi)
+   - **Promiscuous Mode:** Deny (or Allow VMs if needed)
+   - **Cable Connected:** Checked
+
+3. **Click OK/Save**
+
+4. **Start the VM**
+
+#### Network Configuration
+
+- If the VM uses DHCP, it should obtain an IP from the same network as the host.
+- If necessary, configure a static IP in the VM (gateway and netmask must match the host network).
+
 ## Flag 01 - Parameter Tampering - I forgot my password
 Refs:<br>
 [Web_Parameter_Tampering](https://owasp.org/www-community/attacks/Web_Parameter_Tampering)
