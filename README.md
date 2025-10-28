@@ -73,7 +73,7 @@ Refs:<br>
 
 [SQL_Injection_Prevention_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)
 
-## Flag 06 - URL Route http://darklyIPaddress/../../
+## Flag 06 - Directory Traversal - URL Route http://darklyIPaddress/../../
 ## Flag 07 - Submit Image with php code integrated
 ## Flag 08 - Login page BruteForce
 ## Flag 09 - Leave a feedback -> script XSS

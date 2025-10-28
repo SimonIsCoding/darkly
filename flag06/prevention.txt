@@ -1,0 +1,9 @@
+Why it is dangerous ?
+
+You can exit the webroot directory and then access to sensitives files like /etc/passwd. This let the attacker reveal passwords.
+
+How to prevent it ?
+
+- 
+
+Refs:
