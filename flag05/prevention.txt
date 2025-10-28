@@ -1,0 +1,12 @@
+Why is it dangerous ? 
+
+This let the attacker execute random query in the database. He can then read/write/modify/erase data in the database. If the attacker can execute it with an admin privilege, then the impact is fully damageable — potential takeover of application storage or even the server
+
+How to prevent it ?
+- parameterized queries. 
+- Validate and standardize input
+
+Refs:
+- https://portswigger.net/web-security/sql-injection/examining-the-database
+- https://hackviser.com/tactics/pentesting/web/sql-injection#union-based-injection
+- https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html

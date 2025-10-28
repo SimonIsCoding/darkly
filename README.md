@@ -26,7 +26,14 @@ Refs:
 
 [SQL_Injection_Prevention_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)
 
-## Flag 05 - SQL Injection - Search Member by ID
+## Flag 05 - UNION-based SQL Injection - Search Member by ID
+Refs:
+[examining-the-database](https://portswigger.net/web-security/sql-injection/examining-the-database)
+
+[union-based-injection](https://hackviser.com/tactics/pentesting/web/sql-injection#union-based-injection)
+
+[SQL_Injection_Prevention_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)
+
 ## Flag 06 - URL Route http://darklyIPaddress/../../
 ## Flag 07 - Submit Image with php code integrated
 ## Flag 08 - Login page BruteForce
