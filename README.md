@@ -12,7 +12,7 @@ Follow these steps to place the VM and host on the same LAN/subnet.
 
 #### Configuration Steps
 
-1. **Open VirtualBox → Settings** (for your VM) → **Network**
+1. **Open VirtualBox → Settings** (for your VM where you installed darkly.iso image) → **Network**
 
 2. **Adapter 1** → Enable Network Adapter
    - **Attached to:** Bridged Adapter
