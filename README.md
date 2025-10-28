@@ -19,7 +19,7 @@ Refs:<br>
 [Cookie_Theft_Mitigation_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cookie_Theft_Mitigation_Cheat_Sheet.html)
 
 ## Flag 04 - UNION-based SQL Injection - Image number
-Refs:
+Refs:<br>
 [examining-the-database](https://portswigger.net/web-security/sql-injection/examining-the-database)
 
 [union-based-injection](https://hackviser.com/tactics/pentesting/web/sql-injection#union-based-injection)
@@ -27,7 +27,7 @@ Refs:
 [SQL_Injection_Prevention_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)
 
 ## Flag 05 - UNION-based SQL Injection - Search Member by ID
-Refs:
+Refs:<br>
 [examining-the-database](https://portswigger.net/web-security/sql-injection/examining-the-database)
 
 [union-based-injection](https://hackviser.com/tactics/pentesting/web/sql-injection#union-based-injection)
