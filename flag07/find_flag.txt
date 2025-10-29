@@ -1,6 +1,6 @@
 How to find the flag ? 
 
-For finding this flag we will use an extra tool
+For finding this flag we will use an extra software - Burp Suite Community Edition
 1 - Download & Install Burp Suite Community Edition
 2 - Launch it
 3 - Select 'Temporary project in memory', then click on 'Next' Button

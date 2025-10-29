@@ -1,0 +1,20 @@
+Why it is dangerous ?
+
+An uploaded file not well filtered can contain malicious code and if the server execute it, this lead to a Remote Code Execution (RCE).
+The web server can be compromised by uploading and executing a web-shell which can run commands, browse system files, browse local resources, attack other servers, or exploit the local vulnerabilities, and so forth.
+The file storage server might be abused to host troublesome files including malwares, illegal software, or adult contents. Uploaded files might also contain malwares’ command and control data, violence and harassment messages, or steganographic data that can be used by criminal organisations.
+
+How to prevent it ?
+- Never trust what the client is sending. Always verify on the server-side what has been sent. 
+- Never trust the header of a uploaded file sent by the client.
+- If the server is waiting for an image to be uploaded, you can use server libraries to re-encode the image. In that way, you are sure that the file sent is strictly the category file that you want.
+- Store the files sent by the client outside the webroot and deactivate any execution mode. Just grant the rw (Read+Write) permissions.
+- Rename the file (with UUID for example) sent by the client and force the extension wanted by the server. Avoid as well double extensions (like shell.php.jpg).
+- Before the file exposure, store it in a clustered environment, like a sandbox.
+- Block any executable extensions like .php, .exe, .sh, ... and refuse any suspicious file. Verify also the SVG file because they can contain JS code.
+- Set a file size limit
+
+Refs:
+- https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
+- https://portswigger.net/web-security/file-upload
+- https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload

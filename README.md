@@ -81,13 +81,13 @@ Refs:<br>
 
 [01-Testing_Directory_Traversal_File_Include](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/05-Authorization_Testing/01-Testing_Directory_Traversal_File_Include)
 
-## Flag 07 - Submit Image with php code integrated
+## Flag 07 - Unrestricted file upload - Submit Image with php code integrated
 Refs:<br>
-[]()
+[File_Upload_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html)
 
-[]()
+[file-upload](https://portswigger.net/web-security/file-upload)
 
-[]()
+[Unrestricted_File_Upload](https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload)
 
 ## Flag 08 - Login page BruteForce
 ## Flag 09 - Leave a feedback -> script XSS
