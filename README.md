@@ -74,7 +74,21 @@ Refs:<br>
 [SQL_Injection_Prevention_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)
 
 ## Flag 06 - Directory Traversal - URL Route http://darklyIPaddress/../../
+Refs:<br>
+[Path_Traversal](https://owasp.org/www-community/attacks/Path_Traversal)
+
+[file-path-traversal](https://portswigger.net/web-security/file-path-traversal)
+
+[01-Testing_Directory_Traversal_File_Include](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/05-Authorization_Testing/01-Testing_Directory_Traversal_File_Include)
+
 ## Flag 07 - Submit Image with php code integrated
+Refs:<br>
+[]()
+
+[]()
+
+[]()
+
 ## Flag 08 - Login page BruteForce
 ## Flag 09 - Leave a feedback -> script XSS
 ## Flag 10 - Open Redirect - Check Homepage source Code

@@ -1,9 +1,15 @@
 Why it is dangerous ?
 
-You can exit the webroot directory and then access to sensitives files like /etc/passwd. This let the attacker reveal passwords.
+You can exit the webroot directory and then access to sensitives files like /etc/passwd. This let the attacker reveal passwords. But for others cases, the attacker could get access to any other files, like pictures, or admin files, ... 
 
 How to prevent it ?
-
-- 
+- Don’t store sensitive configuration files inside the web root
+- Never include path controlled by the user. For exemple, if you want to access this file '/var/www/pages/member_5.php'for your web, use intern id like '?page=member&id=5' to let the server know which page you want to access.
+- Only puclicly grant access to certain files. Whitelist the most useful file and restrain the one that are private.
+- Validate the user input before processing it. Ideally, compare the user input with a whitelist of permitted values. If that isn't possible, verify that the input contains only permitted content, such as alphanumeric characters only.
+-> After validating the supplied input, append the input to the base directory and use a platform filesystem API to canonicalize the path. Verify that the canonicalized path starts with the expected base directory.
 
 Refs:
+- https://owasp.org/www-community/attacks/Path_Traversal
+- https://portswigger.net/web-security/file-path-traversal
+- https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/05-Authorization_Testing/01-Testing_Directory_Traversal_File_Include
