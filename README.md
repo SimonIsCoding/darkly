@@ -6,6 +6,8 @@
 
 Download the Darkly ISO, create a VirtualBox VM, attach the ISO, and configure a bridged network so the VM and your host appear on the same LAN (same subnet) and can reach each other directly.
 
+To download Darkly iso, <a href="https://cdn.intra.42.fr/isos/Darkly_i386.iso">Click here</a>.
+
 ### Configuring a Bridged Network (VirtualBox) — Quick Instructions
 
 Follow these steps to place the VM and host on the same LAN/subnet.
