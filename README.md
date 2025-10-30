@@ -98,10 +98,12 @@ Refs:<br>
 Refs:<br>
 [Brute_force_attack](https://owasp.org/www-community/attacks/Brute_force_attack)
 
-## Flag 09 - Leave a feedback -> script XSS
+## Flag 09 - Stored XSS - Leave a feedback
 
-Refs:
-[]()
+Refs:<br>
+[02-Testing_for_Stored_Cross_Site_Scripting](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/02-Testing_for_Stored_Cross_Site_Scripting)
+
+[cross-site-scripting](https://portswigger.net/web-security/cross-site-scripting)
 
 ## Flag 10 - Open Redirect - Check Homepage source Code
 Refs:<br>
