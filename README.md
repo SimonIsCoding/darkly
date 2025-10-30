@@ -91,8 +91,18 @@ Refs:<br>
 
 [Unrestricted_File_Upload](https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload)
 
-## Flag 08 - Login page BruteForce
+## Flag 08 - BruteForce - Login page 
+> [!TIP]
+> Use the most famous password's dictionnary 
+
+Refs:<br>
+[Brute_force_attack](https://owasp.org/www-community/attacks/Brute_force_attack)
+
 ## Flag 09 - Leave a feedback -> script XSS
+
+Refs:
+[]()
+
 ## Flag 10 - Open Redirect - Check Homepage source Code
 Refs:<br>
 [Testing_for_Client_Side_URL_Redirect](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/Client_Side_Testing/04-Testing_for_Client_Side_URL_Redirect)
