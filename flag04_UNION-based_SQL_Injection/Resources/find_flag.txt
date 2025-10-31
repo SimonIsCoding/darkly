@@ -15,4 +15,3 @@ Then you can also see that the title is 'Member_images' for image number 5. This
 	-> Find the list_images one, because this is the one that interests us
 	You can see that it is divided in 4 parts: id, url, title, comment
 5 - Then try to look for the information for each component of list_images. For example, in the input box, write '5 union select title, comment FROM list_images' -> then read all the info and you should get the flag
-	-> the flag is 'albatroz'
