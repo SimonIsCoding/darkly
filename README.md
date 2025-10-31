@@ -1,4 +1,4 @@
-# darkly
+# Darkly
 
 ## Darkly VM Setup Guide
 
@@ -110,3 +110,11 @@ Refs:<br>
 [Testing_for_Client_Side_URL_Redirect](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/Client_Side_Testing/04-Testing_for_Client_Side_URL_Redirect)
 
 [Unvalidated_Redirects_and_Forwards_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html)
+
+## Flag 11 - Directory Enumeration - /.hidden
+Refs:<br>
+[Forced_browsing](https://owasp.org/www-community/attacks/Forced_browsing)
+
+[information-disclosure](https://portswigger.net/web-security/information-disclosure)
+
+## Flag 12 -
