@@ -118,3 +118,12 @@ Refs:<br>
 [information-disclosure](https://portswigger.net/web-security/information-disclosure)
 
 ## Flag 12 -
+
+## Tools I used:
+[SHA256 Encoder](https://emn178.github.io/online-tools/sha256.html)
+
+[Password Hash Cracker](https://crackstation.net/)
+
+[hash identifier](https://hashes.com/en/tools/hash_identifier)
+
+[Burp Suite Community Edition](https://portswigger.net/burp/releases/community/latest)
