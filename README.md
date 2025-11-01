@@ -123,6 +123,16 @@ Refs:<br>
 
 [bypassing-referer-based-defenses](https://portswigger.net/web-security/csrf/bypassing-referer-based-defenses)
 
+## Flag 13 - XSS - NSA image
+Refs:<br>
+[Preventing_cross-site-scripting](https://portswigger.net/web-security/cross-site-scripting/preventing)
+
+[DOM_based_XSS_Prevention_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
+
+## Flag 14 - XSS - Survey
+Refs:<br>
+
+
 ## Tools I used:
 [SHA256 Encoder](https://emn178.github.io/online-tools/sha256.html)
 

@@ -27,18 +27,18 @@ And all this without compromising the server: the visitor's browser does the wor
 ```
 <a href="?page=media&src=nsa">
 ```
-2. Modify 'src=nsa' into 'src=something_else'
+2. Modify `src=nsa` into `src=something_else`
 3. Click on the image to see the behavior. It now goes into another page, which is not the same as previously. Meaning it is XSS vulnerable.
 
 ## 3 - Create a JS script
-1. Let's create a script to inject after the src tag
+1. Let's create a script to inject after the `src` tag
 ```
 <script>
 alert('example')
 </script>
 ```
 
-2. We can not inject it directly with the script tags. Instead, we have to convert it into data:text. This scheme (data:) allows encoded content to be injected directly into the URL, without going through a file hosted elsewhere.
+2. We can not inject it directly with the `<script>` tags. Instead, we have to convert it into data:text. This scheme (data:) allows encoded content to be injected directly into the URL, without going through a file hosted elsewhere.
 It is a roundabout way of including a script “locally,” which sometimes bypasses security filters. So let's encode or script with a [base64 encoder](https://www.base64encode.org/). We have the following string:
 ```
 PHNjcmlwdD4KYWxlcnQoJ2V4YW1wbGUnKQo8L3NjcmlwdD4=
@@ -66,7 +66,12 @@ Click on the NSA image, you should be redirected into the flag page:
 
 ## How to prevent it ? 
 
-1. 
+1. Validate input on arrival: For attributes like `src`, `data`, `href`, accept only safe schemes you expect (for example `https:`) and reject `javascript:`, `data:`, `vbscript:`, or any unknown scheme. Prefer an allowlist of protocols and hosts — do not rely on blacklists. This prevents exactly the `data:text/html;base64,...` injection.
+
+2. Encode data on output: Never insert untrusted data into HTML, attributes, JavaScript, or URLs without encoding it for the specific context.
 
 ## References:
 
+[Preventing_cross-site-scripting](https://portswigger.net/web-security/cross-site-scripting/preventing)
+
+[DOM_based_XSS_Prevention_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
