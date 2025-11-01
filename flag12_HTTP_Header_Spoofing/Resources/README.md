@@ -1,7 +1,7 @@
 # Burp Suite - Header Manipulation Guide
 
 ## Why is it dangerous ?
-1. HTTP headers (Referer, User-Agent, etc.) are not proof of identity: attackers can easily forge them. Relying solely on these values is tantamount to trusting data provided by the adversary. 
+1. HTTP headers (Referer, User-Agent, etc.) are not proof of identity: attackers can easily forge them. Relying solely on these values is equivalent to trusting data provided by the adversary. 
 
 2. If the server grants privileges or secrets based solely on these headers, an attacker can obtain them without actual authentication (flag capture, sensitive data, restricted actions). This is therefore an access/authorization failure. 
 
