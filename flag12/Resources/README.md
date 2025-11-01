@@ -1,5 +1,10 @@
 # Burp Suite - Header Manipulation Guide
 
+## Why is it dangerous ?
+1. HTTP headers (Referer, User-Agent, etc.) are not proof of identity: attackers can easily forge them. Relying solely on these values is tantamount to trusting data provided by the adversary. 
+
+2. If the server grants privileges or secrets based solely on these headers, an attacker can obtain them without actual authentication (flag capture, sensitive data, restricted actions). This is therefore an access/authorization failure. 
+
 ## Prerequisite:
 
 When you click on the copyright icon, it redirects you to the following URL:
@@ -21,7 +26,7 @@ and
 	-->
    ```
 
-Starting with these informations, we already have some pists.
+Starting with these informations, we already have some clues.
 
 ## 1 - Launch Burp and its integrated browser
 
@@ -97,3 +102,16 @@ Go back to the built-in browser, you should see this:
 
 ---
 
+## How to prevent it ? 
+
+1. Never make authorization decisions based solely on headers sent by the client (Referer, User-Agent, etc.). Access controls must be performed on the server side via robust authentication and authorization (signed sessions, tokens, API keys, MFA). 
+
+2. If you use Referer/Origin solely to reduce the risk of CSRF, combine this verification with an anti-CSRF token (double-submit or server-side token). Referer can be a supporting factor, but it does not replace the token.
+
+3. Check all critical entries on the server side: validate sessions, check current user permissions, and deny access if the user is not authenticated/authorized.
+
+## References:
+
+[HTTP_Headers_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html)
+
+[bypassing-referer-based-defenses](https://portswigger.net/web-security/csrf/bypassing-referer-based-defenses)

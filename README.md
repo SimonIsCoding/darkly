@@ -117,7 +117,11 @@ Refs:<br>
 
 [information-disclosure](https://portswigger.net/web-security/information-disclosure)
 
-## Flag 12 - HTTP header spoofing - Ft_BornToSec
+## Flag 12 - HTTP header spoofing - Copyright Icon
+Refs:<br>
+[HTTP_Headers_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html)
+
+[bypassing-referer-based-defenses](https://portswigger.net/web-security/csrf/bypassing-referer-based-defenses)
 
 ## Tools I used:
 [SHA256 Encoder](https://emn178.github.io/online-tools/sha256.html)
