@@ -1,11 +1,18 @@
 # XSS - NSA image
 
 ## Why is it dangerous ?
-If the application does not properly filter what is passed to it in src, an attacker can inject any JavaScript code.For example:
-	- Read session cookies (document.cookie) and send them to an external server.
-	- Modify the content of the page (e.g., display a fake login form to steal credentials).
-	- Make requests on behalf of the authenticated user (e.g., change their password, transfer funds, etc.).
-	- Load other malicious external scripts.
+If the application does not properly filter what is passed to it in `src`, an attacker can inject any JavaScript code.
+
+For example:
+
+- **Read session cookies** (`document.cookie`) and send them to an external server
+
+- **Modify the content of the page** (e.g., display a fake login form to steal credentials)
+
+- **Make requests on behalf of the authenticated user** (e.g., change their password, transfer funds, etc.)
+
+- **Load other malicious external scripts**
+
 And all this without compromising the server: the visitor's browser does the work by executing the injected code.
 
 ## Prerequisite to get the flag:
@@ -42,8 +49,7 @@ PHNjcmlwdD4KYWxlcnQoJ2V4YW1wbGUnKQo8L3NjcmlwdD4=
 ```
 data:text/html;base64,
 ```
-
-2. Then we can replace the whole reference in the <a> tag by:
+2. Then we can replace the whole reference in the `<a>` tag by:
 ```
 ?page=media&src=data:text/html;base64,PHNjcmlwdD4KYWxlcnQoJ2V4YW1wbGUnKQo8L3NjcmlwdD4=
 ```
