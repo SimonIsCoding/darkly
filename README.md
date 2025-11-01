@@ -131,3 +131,5 @@ Refs:<br>
 [hash identifier](https://hashes.com/en/tools/hash_identifier)
 
 [Burp Suite Community Edition](https://portswigger.net/burp/releases/community/latest)
+
+[base64 encoder](https://www.base64encode.org/)
