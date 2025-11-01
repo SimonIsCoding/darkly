@@ -1,0 +1,99 @@
+# Burp Suite - Header Manipulation Guide
+
+## Prerequisite:
+
+When you click on the copyright icon, it redirects you to the following URL:
+
+http://DarklyIPaddress/?page=b7e44c7a40c5f80139f0a50f3650fb2bd8d00b0d24667c4c2ca32c88e13b758f
+
+If you inspect the html, you will see some useless information. But if you look closer, you will see two key elements:
+   ```
+	<!--
+		You must come from : "https://www.nsa.gov/".
+	-->
+   ```
+
+and
+
+   ```
+	<!--
+		Let's use this browser : "ft_bornToSec". It will help you a lot.
+	-->
+   ```
+
+Starting with these informations, we already have some pists.
+
+## 1 - Launch Burp and its integrated browser
+
+1. Open **Burp Suite**
+   - Select **Temporary project in memory**
+   - Choose **Use Burp defaults**
+   - Click **Start Burp**
+
+2. Configure the Proxy
+   - Navigate to **Proxy → Intercept**
+   - Make sure **Intercept is on** (the button should display "Intercept on")
+
+3. Launch the integrated browser
+   - Click **Open Browser** (button in the Proxy tab)
+   - This launches the built-in browser, which is already configured to use Burp as a proxy
+
+---
+
+## 2 - Load the target page
+
+1. In the built-in browser, paste the vulnerable URL:
+   ```
+   http://DarklyIPaddress/?page=b7e44c7a40c5f80139f0a50f3650fb2bd8d00b0d24667c4c2ca32c88e13b758f
+   ```
+
+2. Press **Enter**
+
+3. The page should load indefinitely - this is a good sign
+
+4. The request will arrive in **Proxy → Intercept → Request** and will be blocked (intercepted)
+
+---
+
+## 3 - Modify the headers directly
+
+In the **Intercepted Request** panel, you should see this:
+
+<p align="center">
+  <img src="step1.png" width="800" alt="Initial intercepted request">
+</p>
+
+### Editing the request
+
+1. Click in the text box containing the HTTP request
+
+2. Locate the lines:
+   - `User-Agent: ...`
+   - `Referer: ...` (if there is no Referer already, add a line after `Host:` or after `GET ... HTTP/1.1`)
+
+3. **Replace/add** the following headers:
+   ```
+   Referer: https://www.nsa.gov/
+   User-Agent: ft_bornToSec
+   ```
+
+### After editing, you should have this:
+
+<p align="center">
+  <img src="step2.png" width="800" alt="Modified request with new headers">
+</p>
+
+4. Click **Forward** to send the modified request to the server
+
+---
+
+## 4 - Result
+
+Go back to the built-in browser, you should see this:
+
+<p align="center">
+  <img src="flag.png" width="800" alt="Flag displayed after successful header modification">
+</p>
+
+---
+

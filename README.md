@@ -117,7 +117,7 @@ Refs:<br>
 
 [information-disclosure](https://portswigger.net/web-security/information-disclosure)
 
-## Flag 12 -
+## Flag 12 - HTTP header spoofing - Ft_BornToSec
 
 ## Tools I used:
 [SHA256 Encoder](https://emn178.github.io/online-tools/sha256.html)
