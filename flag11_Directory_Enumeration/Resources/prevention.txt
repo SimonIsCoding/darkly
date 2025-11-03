@@ -1,6 +1,5 @@
 Why is it dangerous ?
-In this example, we could read and found the flag that was inside the /.hidden folder. Meaning the attacker can read file that are not referenced in the website. We can imagine that in a real scenario, this folder could contain logs, configs files, README, sensitive keys,... which can lead to other more serious attacks. Which leads to another attack called Broken Access Control
-In any case, a website will always have a robots.txt file. It is public. But providing sensitive path to real folders is a security breach.
+
 
 How to prevent it ?
 - Never expose configuration file or identification file in the webroot

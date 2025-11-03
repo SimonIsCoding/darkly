@@ -2,13 +2,13 @@
 
 ## Why is it dangerous ?
 
-Each time a client is sending information to the server, the server has to check it. Never trust what's the client is sending. Because if it is modifying a field, like we did, then he could send SQL or XSS injection, for example. The data client-side are controllable by the client itself.
+Each time a client is sending information to the server, the server has to check it. Never trust what's the client is sending. Because if it is modifying a field, like we did, then he could send SQL or XSS injection, for example. The data client-side are controllable by the client itself.<br>
 Imagine a e-commerce online shop that doesn't verify on the server-side what data the client is sending. Then the client could modify the prices, create big discounts, ... 
 
 ## 1 - Survey
 
 1. Go on the survey page and check the code by opening the WebDev Tools (CTRL + SHIFT + I).
-2. Check the select tag. Try to modify any value sent by a value grater than 10.
+2. Check the `<select>` tag. Modify any value sent by a `value` greater than 10.
 3. Select this value.
 
 ## 2 - Result
