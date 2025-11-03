@@ -1,9 +1,0 @@
-How to find the flag ? 
-
-1 - In the homepage, click on 'Leave a Feedback' button
-2 - On name input, put anything you want
-3 - On Message, write: 'script'
-4 - Press 'SIGN GUESTBOOK' button
-Congrats!
-
-This is XSS. Before, in the message input, we tried <script>alert("whatever")</script> to see how it behaved. By writting <script>, we saw that it erased it as if it was not there, to avoid XSS, but not 'script' itself. So if we find a way to create a script without writing exactly <script>, then it is XSS hackable. 

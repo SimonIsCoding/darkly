@@ -32,7 +32,6 @@ You should be redirected on the page that contains the flag.
 <p align="center">
   <img src="flag10.png" width="800">
 </p>
----
 
 ## How to prevent it ? 
 
