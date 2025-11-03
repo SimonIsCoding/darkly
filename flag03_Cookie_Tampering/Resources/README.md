@@ -12,7 +12,7 @@ Here, we modified the value of the cookie session. This is dangerous because if 
 	You can see that 'Name' row has `I_am_admin` as name -> meaning it might be the name of the admin
 6. Recover the content of `Value` cell. This is a hash string. Once you decrypt it with the [hash cracker tool](https://crackstation.net/), you will see that it is encrypted with MD5 algorithm and the content is `false`.
 7. Then, replace this encrypted content by the hashed string `true` with the same MD5 encryption method using the [MD5 encryptor tool](https://www.md5hashgenerator.com/). It should give you: `b326b5062b2f0e69046810717534cb09`
-8. Paste `b326b5062b2f0e69046810717534cb09` into the value cell. 
+8. Paste `b326b5062b2f0e69046810717534cb09` into the `Value` cell. 
 9. Reload the page.
 
 ## 2 - Result
