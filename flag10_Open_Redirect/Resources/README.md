@@ -12,20 +12,19 @@ Attackers often use this trick to:
 - The user may be redirected to an untrusted page that contains malware which may then compromise the user's system. In some cases, an open redirect can also enable the immediate download of a file without the user's permission
 <br>
 Example on why it is bad:
-<br>
-`<a href="http://bank.example.com/redirect?url=http://attacker.example.net">Click here to log in</a>`
 
+    <a href="http://bank.example.com/redirect?url=http://attacker.example.net">Click here to log in</a>
 The user may assume that the link is safe since the URL starts with their trusted bank, bank.example.com. However, the user will then be redirected to the attacker's web site (attacker.example.net) which the attacker may have made to appear very similar to bank.example.com. The user may then unwittingly enter credentials into the attacker's web page and compromise their bank account. A Java servlet should never redirect a user to a URL without verifying that the redirect address is a trusted site.
 
 ## 1 - Check Homepage source Code
-
 1. In the homepage, open the devTool with Control + Shift + I. Go at the bottom of the page and select one of the three social media icon. The code is written like this:
 ```
 	<li><a href="index.php?page=redirect&site=facebook" class="icon fa-facebook"></a></li>
 	<li><a href="index.php?page=redirect&site=twitter" class="icon fa-twitter"></a></li>
 	<li><a href="index.php?page=redirect&site=instagram" class="icon fa-instagram"></a></li>
 ```
-3. Change the redirection of one of the links after 'site='. For example: `index.php?page=redirect&site=whatever`
+
+2. Change the redirection of one of the links after 'site='. For example: `index.php?page=redirect&site=whatever`
 
 ## 2 - Result
 
