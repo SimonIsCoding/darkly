@@ -144,3 +144,5 @@ Refs:<br>
 [Burp Suite Community Edition](https://portswigger.net/burp/releases/community/latest)
 
 [base64 encoder](https://www.base64encode.org/)
+
+[MD5 encryptor tool](https://www.md5hashgenerator.com/)
