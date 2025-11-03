@@ -10,7 +10,7 @@ This let the attacker execute random query in the database. He can then read/wri
 	- By searching: 1, then 2, then ... until 5 -> you get an indication that the flag can be hidden in the number 5 image
 2. In the input box, write `5 union select user(), database()`, then press submit button. By doing this you want to get the info of the database, to know how it is structured
 	- it can be potentially SQL injected. Let's dive deeper to know it
-Then you can also see that the title is `Member_images` for image number 5. This will help us for the future.
+	- Then you can also see that the title is `Member_images` for image number 5. This will help us for the future.
 3. In the input box, write '5 union select table_name, table_schema FROM information_schema.tables'
 	- WHY this input ? This is written in the PHP manual
 	- It will give all the information about how are structured the tables in the database 
@@ -28,7 +28,7 @@ Then you can also see that the title is `Member_images` for image number 5. This
 
 You should be able to read this to get the flag.
 <p align="center">
-  <img src="flag.png" width="800">
+  <img src="flag04.png" width="800">
 </p>
 
 > [!NOTE]
