@@ -129,9 +129,11 @@ Refs:<br>
 
 [DOM_based_XSS_Prevention_Cheat_Sheet](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
 
-## Flag 14 - XSS - Survey
+## Flag 14 - Parameter Tampering - Survey
 Refs:<br>
+[Web_Parameter_Tampering](https://owasp.org/www-community/attacks/Web_Parameter_Tampering)
 
+[Test_Integrity_Checks](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/10-Business_Logic_Testing/03-Test_Integrity_Checks)
 
 ## Tools I used:
 [SHA256 Encoder](https://emn178.github.io/online-tools/sha256.html)
