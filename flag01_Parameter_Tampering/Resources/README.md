@@ -11,7 +11,7 @@ Imagine a e-commerce online shop that doesn't verify on the server-side what dat
 2. Open the web developer tools with CTRL + SHIFT + I
 3. Pick the 'Submit' button to inspect 
 	You can see that the code is written like this: `<input type="hidden" name="mail" value="webmaster@borntosec.com" maxlength="15">`
-4. Remove `'hidden'` to let `type=""`, then make sure there is no more than 15 caracters in the input box
+4. Remove `hidden` to let `type=""`, then make sure there is no more than 15 caracters in the input box
 5. Click on Submit button
 
 ## 2 - Result
