@@ -1,12 +1,4 @@
 
 How to find the flag ? 
 
-1 - Go to: http://DarklyIPaddress/robots.txt
-2 - You can see that there are two interesting folders. For this flag, /whatever interests us. So go to: http://DarklyIPaddress/whatever/
-3 - Click on htpasswd -> it should directly download a file called 'htpasswd'
-4 - Inside of this file, you can see the content: root:437394baff5aa33daa618be47b75cb49
-	This means that 'root' is the username, and everything at the right of the ':' is the encrypted password. Go to the online website: https://hashes.com/en/tools/hash_identifier to indentify what kind of hashing is it. It will give you MD5 hashing method.
-5 - then use a tool to decrypt the MD5 hashed string. The password should be: 'qwerty123@'
-6 - Now that you have the user and password, and you guess that the user has high privileges, go to http://DarklyIPaddress/admin
-7 - In login put 'root' and in password put 'qwerty123@'
-8 - click on login button -> You should be redirected on the flag page
+
