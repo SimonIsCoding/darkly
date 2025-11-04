@@ -13,8 +13,12 @@ For finding this flag we will use 2 extra tools: Burp Suite and the rockyou.txt 
 10 - Then go back to Burp Suite. In the proxy panel, click right on the GET http request, and click on 'Send to intruder'.
 11 - Then you go in intruder panel. Inside the main box, you have in the first line the GET http request with the login that you put and the password. Double click on the password to select it entirely and click on "Add §" button. 
 12 - at the right, in payload, click on 'load' button to let Burp load the rockyou.txt dictionnary. Make Sure payload type is set with 'Simple List'.
+
+
 13 - Now, still in the intruder panel, at the very right, click on Settings button. In Auto-pause attack section, you have to add: 'win.png'. Why win.png ? Because we know that each time we found a flag (or most of the time), it goes with the image named win.png. It should Enable auto-pause as well. In match type, select 'Simple string'.
 14 - Do the same in the box just below called "Grep - Match". Add 'win.png'. It should appear at the bottom of the list.
+
+
 15 - Now you can start the attack by clicking on 'Start attack', with Sniper Attack mode.
 16 - Now a popup should appear that is telling you that the attack has begun. And new page should appear with heading "intruder attack on http://DarklyIP" with every password that Burp is trying to 'Snipe'/Check.
 17 - Indication: the password is found before the 100th iteration in the rockyou list. 
