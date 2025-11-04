@@ -32,6 +32,7 @@ Starting with these informations, we already have some clues.
 
 1. Open **Burp Suite**
    - Select **Temporary project in memory**
+   - Click **Next**
    - Choose **Use Burp defaults**
    - Click **Start Burp**
 
@@ -52,11 +53,11 @@ Starting with these informations, we already have some clues.
    http://DarklyIPaddress/?page=b7e44c7a40c5f80139f0a50f3650fb2bd8d00b0d24667c4c2ca32c88e13b758f
    ```
 
-2. Press **Enter**
+2. Press **Enter** in the default web browser to make it load.
 
 3. The page should load indefinitely - this is a good sign
 
-4. The request will arrive in **Proxy → Intercept → Request** and will be blocked (intercepted)
+4. In Burp Suite, the request will arrive in **Proxy → Intercept → Request** and will be blocked (intercepted)
 
 ---
 
