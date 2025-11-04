@@ -98,7 +98,7 @@ Refs:<br>
 Refs:<br>
 [Brute_force_attack](https://owasp.org/www-community/attacks/Brute_force_attack)
 
-[Intruder_getting_started](https://portswigger.net/burp/documentation/desktop/tools/intruder/getting-started)
+[Intruder_getting_started](https://portswigger.net/burp/documentation/desktop/tools/intruder/getting-started) - Useful only if you want to use [Burp Suite Tool](https://portswigger.net/burp/releases/community/latest)
 
 ## Flag 09 - Stored XSS - Leave a feedback
 Refs:<br>
