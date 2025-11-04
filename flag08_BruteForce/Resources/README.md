@@ -78,11 +78,28 @@ It should Enable **auto-pause** as well. Just , in match type, select **Simple s
   <img src="step4.png" width="800" alt="password variable changed in Burp Suite">
 </p>
 
-13. Now in **Intruder**, you can start the attack by clicking on **Start attack**, with **Sniper Attack** mode.
+13. Now in **Intruder**, you can start the attack by clicking on **Start attack**, with **Sniper Attack** mode. This opens a new attack window in which you can see each of the requests that Burp Intruder is making.
+<p align="center">
+  <img src="step5.png" width="800" alt="Attack started">
+</p>
+> [!NOTE]
+> I don't know why, this new window took a lot of time to load on my computer, like maybe 4 minutes. Maybe you will be luckier. If you notice that your CPU is working harder, that's good sign, give it some time to open this window.
+
+14. Look for any irregular responses
+> [!TIP]
+> the password is found before the 100th iteration in the rockyou list. 
+> Check the response number. You can also see the render, to see it 'in live'
+> You can configure the Resource pool to go faster between 2 attacks.
+<p align="center">
+  <img src="step6.png" width="800" alt="Attack finished">
+</p>
+
+After having waited enough, you can see that there are no more attacks after the 73th password. It stops because with the 73th attack, the browser found `win.png` image in the webpage. And you can see that the **Response** number is very different from the others. Same for **Length** parameter.<br>
+Result: the login is `admin` and the password is `shadow`
 
 ## Result
 
-You should be redirected on the page that contains the flag.
+If you try in the Darkly page in your own web browser, you should see:
 <p align="center">
   <img src="flag08.png" width="800">
 </p>
@@ -98,3 +115,5 @@ You should be redirected on the page that contains the flag.
 
 ## References:
 [Brute_force_attack](https://owasp.org/www-community/attacks/Brute_force_attack)
+
+[Intruder_getting_started](https://portswigger.net/burp/documentation/desktop/tools/intruder/getting-started)
