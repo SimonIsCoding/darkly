@@ -82,6 +82,7 @@ It should Enable **auto-pause** as well. Just , in match type, select **Simple s
 <p align="center">
   <img src="step5.png" width="800" alt="Attack started">
 </p>
+
 > [!NOTE]
 > I don't know why, this new window took a lot of time to load on my computer, like maybe 4 minutes. Maybe you will be luckier. If you notice that your CPU is working harder, that's good sign, give it some time to open this window.
 
