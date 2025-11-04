@@ -6,9 +6,9 @@ An uploaded file not well filtered can contain malicious code and if the server 
 The web server can be compromised by uploading and executing a web-shell which can run commands, browse system files, browse local resources, attack other servers, or exploit the local vulnerabilities, and so forth.
 The file storage server might be abused to host troublesome files including malwares, illegal software, or adult contents. Uploaded files might also contain malwares’ command and control data, violence and harassment messages, or steganographic data that can be used by criminal organisations.
 
-## 1 - How to find the flag ?
+## How to find the flag ?
 
-### 1 - Launch Burp and its integrated browser
+### Launch Burp and its integrated browser
 
 1. Open **Burp Suite**
    - Select **Temporary project in memory**
@@ -24,32 +24,33 @@ The file storage server might be abused to host troublesome files including malw
    - Click **Open Browser** (button in the Proxy tab)
    - This launches the built-in browser, which is already configured to use Burp as a proxy
 
----
-
-### 2 - Load the target page
+### Load the target page
 
 4. In the built-in browser, paste the vulnerable URL:
    ```
    http://DarklyIPaddress/?page=upload
    ```
-Press **Enter** in the default web browser to make it load.
-
-Alternatively, you can click on the **Add Image** button from the homepage.
+	Press **Enter** in the default web browser to make it load.
+	Alternatively, you can click on the **Add Image** button from the homepage.
 
 5. The page should load indefinitely - this is a good sign
 
-### 3 - Go back to Burp Suite
+### Go back to Burp Suite
 
 6. The request will arrive in **Proxy → Intercept → Request** and will be blocked (intercepted). Now you have to click on **Forward**.
-
 After clicking on **Forward**, you should see this:
 <p align="center">
   <img src="step1.png" width="800" alt="Initial intercepted request">
 </p>
 
-### 4 - Create the script
+### Create the script
 
 7. Create any php script. Make sure you save it as a php file. This won't work if it's a text file.
+```
+<?php
+echo "Hello World";
+?>
+```
 You can see the index.php file created for this purpose in the folder.
 
 8. Upload the script into the darkly website in the Burp Suite web browser. Click on **Upload** button.
@@ -57,7 +58,6 @@ You can see the index.php file created for this purpose in the folder.
 ### Change HTTP request in Burp Suite
 
 9. Go back to Burp Suite. In the **Proxy** panel, you have a **Request** window. Inside of this window, you will change: `Content-Type: application/octet-stream` into `Content-Type: image/jpg`
-
 After modifying the HTTP request, you should have this piece of code:
 <p align="center">
   <img src="step2.png" width="800" alt="HTTP Header modified">
@@ -65,9 +65,7 @@ After modifying the HTTP request, you should have this piece of code:
 
 10. Press **forward** button.
 
----
-
-## 2 - Result
+## Result
 
 You should see the page that contains the flag.
 <p align="center">
