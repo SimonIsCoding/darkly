@@ -89,9 +89,9 @@ It should Enable **auto-pause** as well. Just , in match type, select **Simple s
 
 14. Look for any irregular responses
 > [!TIP]
-> the password is found before the 100th iteration in the rockyou list.<br>
-> Check the response number. You can also see the render, to see it 'in live'.<br>
-> You can configure the Resource pool to go faster between 2 attacks.
+> 1. The password is found before the 100th iteration in the rockyou list.<br>
+> 2. Check the response number. You can also see the render, to see it 'in live'.<br>
+> 3. You can configure the Resource pool to go faster between 2 attacks.
 <p align="center">
   <img src="step6.png" width="800" alt="Attack finished">
 </p>
