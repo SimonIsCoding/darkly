@@ -37,7 +37,7 @@ The file storage server might be abused to host troublesome files including malw
 
 ### Go back to Burp Suite
 
-6. The request will arrive in **Proxy → Intercept → Request** and will be blocked (intercepted). Now you have to click on **Forward**.
+6. The request will arrive in **Proxy → Intercept → Request** and will be blocked (intercepted). Now you have to click on **Forward**.<br>
 After clicking on **Forward**, you should see this:
 <p align="center">
   <img src="step1.png" width="800" alt="Initial intercepted request">
@@ -57,7 +57,7 @@ You can see the index.php file created for this purpose in the folder.
 
 ### Change HTTP request in Burp Suite
 
-9. Go back to Burp Suite. In the **Proxy** panel, you have a **Request** window. Inside of this window, you will change: `Content-Type: application/octet-stream` into `Content-Type: image/jpg`
+9. Go back to Burp Suite. In the **Proxy** panel, you have a **Request** window. Inside of this window, you will change: `Content-Type: application/octet-stream` into `Content-Type: image/jpg`.<br>
 After modifying the HTTP request, you should have this piece of code:
 <p align="center">
   <img src="step2.png" width="800" alt="HTTP Header modified">
