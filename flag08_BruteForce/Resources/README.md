@@ -64,15 +64,16 @@ After modifying it, you should see this:
   <img src="step3.jpg" width="800" alt="Load rockyou.txt file">
 </p>
 
-11. Now, at the very right, in **Intruder → Settings**, go to **Auto-pause attack** section, you have to add: `win.png`. Why win.png ? Because we know that each time we found a flag (or most of the time), it goes with the image named win.png. It should Enable **auto-pause** as well. Just belown, in match type, select **Simple string**.
+11. Now, at the very right, in **Intruder → Settings**, go to **Auto-pause attack** section, you have to add: `win.png`. Why win.png ? Because we know that each time we found a flag (or most of the time), it goes with the image named win.png.
 <p align="center">
   <img src="step30.png" width="800">
 </p>
+It should Enable **auto-pause** as well. Just , in match type, select **Simple string**.
 <p align="center">
   <img src="step31.png" width="800">
 </p>
 
-12. Do the same in the box just below called "Grep - Match". Add 'win.png'. It should appear at the bottom of the list.
+12. Do the same in the box just below called **Grep - Match**. Add `win.png`. It should appear at the bottom of the list.
 <p align="center">
   <img src="step4.png" width="800" alt="password variable changed in Burp Suite">
 </p>
