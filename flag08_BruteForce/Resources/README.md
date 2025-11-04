@@ -78,7 +78,7 @@ It should Enable **auto-pause** as well. Just , in match type, select **Simple s
   <img src="step4.png" width="800" alt="password variable changed in Burp Suite">
 </p>
 
-13. Now in **Intruder**, you can start the attack by clicking on **Start attack**, with Sniper Attack mode.
+13. Now in **Intruder**, you can start the attack by clicking on **Start attack**, with **Sniper Attack** mode.
 
 ## Result
 
