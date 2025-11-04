@@ -68,6 +68,7 @@ After modifying it, you should see this:
 <p align="center">
   <img src="step30.png" width="800">
 </p>
+
 It should Enable **auto-pause** as well. Just , in match type, select **Simple string**.
 <p align="center">
   <img src="step31.png" width="800">
