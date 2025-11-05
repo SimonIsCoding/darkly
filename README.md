@@ -1,5 +1,7 @@
 # Darkly
 
+Darkly is an educational exercise in the 42 curriculum aimed at understanding common vulnerabilities in web applications. By auditing a deliberately vulnerable application, this project aims to teach how to recognize and exploit flaws (XSS, injections, poor authentication management, etc.), understand OWASP recommendations, and propose corrective measures. This repository contains my notes, testing methods, and write-ups of the flags collected during the project.
+
 ## Darkly VM Setup Guide
 
 ### Goal
